@@ -12,6 +12,11 @@
 		147940AF1F7E634100824A2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 147940AD1F7E634100824A2C /* Main.storyboard */; };
 		147940B11F7E634100824A2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 147940B01F7E634100824A2C /* Assets.xcassets */; };
 		147940B41F7E634100824A2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 147940B21F7E634100824A2C /* LaunchScreen.storyboard */; };
+		147940BC1F7E636200824A2C /* EMIHorizontalMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147940BB1F7E636200824A2C /* EMIHorizontalMenu.swift */; };
+		147940BE1F7E677100824A2C /* ColorsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147940BD1F7E677100824A2C /* ColorsCell.swift */; };
+		147940C01F7E679A00824A2C /* CollectionDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147940BF1F7E679A00824A2C /* CollectionDelegates.swift */; };
+		147940C21F7E67F100824A2C /* HorizontalMenuDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147940C11F7E67F100824A2C /* HorizontalMenuDelegate.swift */; };
+		147940C41F7E683000824A2C /* ScrollviewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147940C31F7E683000824A2C /* ScrollviewDelegates.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		147940B01F7E634100824A2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		147940B31F7E634100824A2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		147940B51F7E634100824A2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		147940BB1F7E636200824A2C /* EMIHorizontalMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EMIHorizontalMenu.swift; sourceTree = "<group>"; };
+		147940BD1F7E677100824A2C /* ColorsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsCell.swift; sourceTree = "<group>"; };
+		147940BF1F7E679A00824A2C /* CollectionDelegates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionDelegates.swift; sourceTree = "<group>"; };
+		147940C11F7E67F100824A2C /* HorizontalMenuDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalMenuDelegate.swift; sourceTree = "<group>"; };
+		147940C31F7E683000824A2C /* ScrollviewDelegates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollviewDelegates.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,11 @@
 			children = (
 				147940A91F7E634100824A2C /* AppDelegate.swift */,
 				147940AB1F7E634100824A2C /* ViewController.swift */,
+				147940BD1F7E677100824A2C /* ColorsCell.swift */,
+				147940BF1F7E679A00824A2C /* CollectionDelegates.swift */,
+				147940C31F7E683000824A2C /* ScrollviewDelegates.swift */,
+				147940C11F7E67F100824A2C /* HorizontalMenuDelegate.swift */,
+				147940BB1F7E636200824A2C /* EMIHorizontalMenu.swift */,
 				147940AD1F7E634100824A2C /* Main.storyboard */,
 				147940B01F7E634100824A2C /* Assets.xcassets */,
 				147940B21F7E634100824A2C /* LaunchScreen.storyboard */,
@@ -97,7 +112,7 @@
 					147940A51F7E634100824A2C = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = LQSB8VPR8N;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -138,6 +153,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				147940AC1F7E634100824A2C /* ViewController.swift in Sources */,
+				147940C41F7E683000824A2C /* ScrollviewDelegates.swift in Sources */,
+				147940C21F7E67F100824A2C /* HorizontalMenuDelegate.swift in Sources */,
+				147940BE1F7E677100824A2C /* ColorsCell.swift in Sources */,
+				147940BC1F7E636200824A2C /* EMIHorizontalMenu.swift in Sources */,
+				147940C01F7E679A00824A2C /* CollectionDelegates.swift in Sources */,
 				147940AA1F7E634100824A2C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,8 +286,10 @@
 				DEVELOPMENT_TEAM = LQSB8VPR8N;
 				INFOPLIST_FILE = EMIHorizontalMenu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.app.fortune.Horizontalmenu.EMIHorizontalMenu;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.telemedicine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e1f77a24-c160-4ae4-a276-4ca192c71fec";
+				PROVISIONING_PROFILE_SPECIFIER = TeleDev;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -276,11 +298,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = LQSB8VPR8N;
 				INFOPLIST_FILE = EMIHorizontalMenu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.app.fortune.Horizontalmenu.EMIHorizontalMenu;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.telemedicine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "00ee3d36-677d-4c65-97b7-8c0104c28452";
+				PROVISIONING_PROFILE_SPECIFIER = TeleDist;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

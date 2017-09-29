@@ -10,16 +10,29 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var menu: EMIHorizontalMenu!
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    
+    let items = ["Imran","apra","pranjal ranka","surbhi","shruti kothari","neha","rt","ravindra rathod","sarvesh","rohit dubey","ronak","vipin"]
+    
+    let colors:[UIColor] = [.red,.blue,.green,.brown,.lightGray,.yellow,.gray,.cyan,.groupTableViewBackground,.purple,.orange,.magenta]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        menu.emidelegate = self
+        menu.items = items
+        collectionView.reloadData()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+   
 
+    override func viewWillLayoutSubviews() {
+        collectionView.collectionViewLayout.invalidateLayout()
+    }
 
 }
+
+
+
 
